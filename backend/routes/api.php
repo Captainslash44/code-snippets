@@ -20,6 +20,7 @@ Route::group(["middleware" => "auth:api"], function(){
         Route::post('/deletesnippet', [SnippetsController::class, 'deleteSnippet']);
         Route::post('/updatesnippet', [SnippetsController::class, 'updateSnippet']);
         Route::post('/searchbytag', [SnippetTagController::class, 'searchByTag']);
+        Route::post('/getlanguages', [LanguageController::class, "getLanguages"]);
 
     });
 });

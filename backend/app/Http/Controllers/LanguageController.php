@@ -29,5 +29,15 @@ class LanguageController extends Controller
         ]);
     }
 
-    
+    public function getLanguages(){
+        $user = Auth::user();
+
+        if(!$user){
+            return response()->json([
+                "access" => "denied",
+                "message" => "Not logged in"
+            ], 401);
+        }
+        return Language::all();
+    }
 }

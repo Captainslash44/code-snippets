@@ -11,7 +11,7 @@ export const request = async ({ method, route, body, headers }) => {
       method, // => method: method,
       url: route,
       data: body,
-      headers: headers,
+      headers,
     });
 
     return response.data;
