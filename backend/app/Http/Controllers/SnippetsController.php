@@ -97,5 +97,7 @@ class SnippetsController extends Controller{
         ]);
     }
 
-    
+    public function getSnippetById($id){
+        return Snippet::where('id', $id)->get();
+    }
 }

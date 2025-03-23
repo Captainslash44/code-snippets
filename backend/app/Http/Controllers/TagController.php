@@ -39,6 +39,6 @@ class TagController extends Controller{
     
     
     public function test(){
-        return app(FavouritesController::class)->hello();
+        return app(SnippetsController::class)->getSnippetById(19);
     }
 }

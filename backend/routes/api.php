@@ -6,6 +6,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\FavouritesController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\SnippetsController;
+use App\Http\Controllers\SnippetTagController;
 use App\Http\Controllers\TagController;
 
 
@@ -18,6 +19,7 @@ Route::group(["middleware" => "auth:api"], function(){
         Route::post('/removefromfavourites', [FavouritesController::class, 'removeFromFavourites']);
         Route::post('/deletesnippet', [SnippetsController::class, 'deleteSnippet']);
         Route::post('/updatesnippet', [SnippetsController::class, 'updateSnippet']);
+        Route::post('/searchbytag', [SnippetTagController::class, 'searchByTag']);
 
     });
 });
