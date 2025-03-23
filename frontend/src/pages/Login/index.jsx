@@ -2,8 +2,35 @@ import React from "react";
 import Button from "../../components/Button";
 import LabelInput from "../../components/Input";
 import "./styles.css";
+import { useState } from "react";
+import { request } from "../../remote/axios";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
+
+  const [form, setForm] = useState({
+    email: "",
+    password: "",
+  });
+
+  const login = async () => {
+    const response = await request({
+      method: "POST",
+      route: "http://localhost:8000/api/guest/login",
+      body: form,
+    });
+
+    if (response.success) {
+      localStorage.setItem("id", response.user.id);
+      localStorage.setItem("name", response.user.name);
+      localStorage.setItem("access_token", response.user.token);
+      navigate("/");
+    } else {
+      alert("wrong credentials");
+    }
+  };
+
   return (
     <div className="flex align-center justify-center full-height">
       <div className="login-form flex column space-between primary-bg rounded-border align-center box-shadow-blue pl">
@@ -27,7 +54,7 @@ const Login = () => {
           />
         </div>
         <footer className="flex column align-center space-between">
-          <Button text="Login" />
+          <Button text="Login" onClick={login} />
         </footer>
         <p>
           Don't have an account? <a href="/signup">Signup</a>

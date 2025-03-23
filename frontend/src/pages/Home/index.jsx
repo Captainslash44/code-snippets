@@ -1,7 +1,13 @@
 import React from "react";
+import SubNavBar from "../../components/SubNavBar";
 
 const Home = () => {
-  return <h1>HOME</h1>;
+  return (
+    <>
+      <SubNavBar />
+      <h1>Home</h1>
+    </>
+  );
 };
 
 export default Home;
