@@ -1,23 +1,26 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.full-height {
+  height: 100vh;
 }
 
 .flex {
   display: flex;
 }
 
+.column {
+  flex-direction: column;
+}
+
 .justify-center {
   justify-content: center;
-}
-
-.align-center {
-  align-items: center;
-}
-
-.justify-start {
-  justify-content: start;
 }
 
 .space-between {
@@ -28,6 +31,87 @@
   justify-content: space-around;
 }
 
-.poppins {
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.rounded-border {
+  border-radius: 6px;
+}
+
+.pl {
+  padding: 1em;
+}
+
+.tm {
+  margin: 0.2em;
+}
+
+.box-shadow-blue {
+  box-shadow: 2px 2px 2px #003092;
+}
+
+.cta-bg {
+  background: linear-gradient(
+    135deg,
+    #b7deed 0%,
+    #71ceef 62%,
+    #21b4e2 97%,
+    #b7deed 100%
+  );
+}
+
+.primary-bg {
+  background-color: #dbf5fd;
+}
+
+.grey-bg {
+  background: linear-gradient(135deg, #cedce7 0%, #596a72 100%);
+}
+
+.mont-font {
+  font-family: "Montserrat";
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/Montserrat-Medium.ttf");
+}
+
+.login-form {
+  width: 30vw;
+  height: 70vh;
+}
+
+.login-form Button {
+  width: 10em;
+}
+
+.input-container {
+  height: 40%;
+  width: 100%;
+}
+
+.login-form input {
+  height: 2.5em;
+}
+
+.login-form p {
+  font-size: 0.75em;
+}
+
+p a {
+  color: black;
+}
+
+.login-form {
   font-family: "Montserrat";
 }

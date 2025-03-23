@@ -1,0 +1,32 @@
+/* ----------------------------------------------SIGNUP-------------------------------------------------- */
+
+.register-form {
+  width: 35vw;
+  height: 80vh;
+  font-family: "Montserrat";
+  /* box-sizing: border-box; */
+}
+
+.register-form Button {
+  width: 10em;
+  margin-top: 4em;
+  /* font-family: "Montserrat"; */
+}
+
+.register-form header {
+  height: 2.5em;
+}
+
+.signup-input-container {
+  height: 50%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.register-form input {
+  height: 3em;
+}
+
+.register-form p {
+  font-size: 0.75em;
+}

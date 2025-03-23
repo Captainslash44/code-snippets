@@ -1,0 +1,13 @@
+.flex {
+  display: flex;
+}
+
+button {
+  height: 2.5em;
+  font-family: "Montserrat";
+  border: none;
+}
+
+button:hover {
+  background: #0d92f4;
+}
