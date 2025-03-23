@@ -28,4 +28,6 @@ class LanguageController extends Controller
             "message" => "language added successfully"
         ]);
     }
+
+    
 }

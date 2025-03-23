@@ -19,4 +19,6 @@ class Snippet extends Model{
     public function favourite(){
         return $this->belongsToMany(Favourite::class);
     }
+
+
 }
