@@ -1,0 +1,19 @@
+ul {
+  list-style: none;
+}
+
+li.active {
+  border-bottom-style: solid;
+  border-color: #43ba6e;
+}
+
+a {
+  padding: 0 1em;
+  color: black;
+  text-decoration: none;
+}
+
+/* li:hover {
+  border-bottom-style: solid;
+  border-color: #43ba6e;
+} */
