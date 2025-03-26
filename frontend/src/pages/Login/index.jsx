@@ -18,7 +18,7 @@ const Login = () => {
     const response = await request({
       method: "POST",
       route:
-        "http://13.38.109.103/var/www/html/code-snippets/backend/api/guest/login",
+        "http://13.38.109.103/var/www/html/code-snippets/backend/public/api/guest/login",
       body: form,
     });
 

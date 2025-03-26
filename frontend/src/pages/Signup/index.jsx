@@ -22,7 +22,7 @@ const Signup = () => {
     const response = await request({
       method: "POST",
       route:
-        "http://13.38.109.103/var/www/html/code-snippets/backend/api/guest/signup",
+        "http://13.38.109.103/var/www/html/code-snippets/backend/public/api/guest/signup",
       body: form,
     });
 

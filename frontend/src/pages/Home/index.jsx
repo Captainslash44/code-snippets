@@ -15,7 +15,7 @@ const Home = () => {
         const response = await request({
           method: "POST",
           route:
-            "http://13.38.109.103/var/www/html/code-snippets/backend/api/user/getlanguages",
+            "http://13.38.109.103/var/www/html/code-snippets/backend/public/api/user/getlanguages",
           headers: {
             Authorization: "Bearer " + localStorage.getItem("access_token"),
           },
