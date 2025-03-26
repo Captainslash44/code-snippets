@@ -86,32 +86,3 @@ body {
   src: url("assets/Montserrat-Medium.ttf");
 }
 
-.login-form {
-  width: 30vw;
-  height: 70vh;
-}
-
-.login-form Button {
-  width: 10em;
-}
-
-.input-container {
-  height: 40%;
-  width: 100%;
-}
-
-.login-form input {
-  height: 2.5em;
-}
-
-.login-form p {
-  font-size: 0.75em;
-}
-
-p a {
-  color: black;
-}
-
-.login-form {
-  font-family: "Montserrat";
-}
