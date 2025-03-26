@@ -21,7 +21,8 @@ const Signup = () => {
 
     const response = await request({
       method: "POST",
-      route: "http://localhost:8000/api/guest/signup",
+      route:
+        "http://13.38.109.103/var/www/html/code-snippets/backend/api/guest/signup",
       body: form,
     });
 
